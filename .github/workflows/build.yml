@@ -35,5 +35,5 @@ jobs:
       - name: Upload artifacts
         uses: actions/upload-artifact@v2
         with:
-          name: toggle-keepinv-artifacts-${{ steps.ref.outputs.sha_short }}
+          name: toggle-keepinv-artifacts-${{ steps.ref.outputs.git_hash }}
           path: build/libs/*.jar
