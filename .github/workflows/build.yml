@@ -12,7 +12,7 @@ jobs:
 
       - name: Extract short commit hash
         shell: bash
-        run: echo "git_hash=$(git rev-parse --short HEAD)" >> $GITHUB_HASH
+        run: echo "git_hash=$(git rev-parse --short "$GITHUB_SHA")" >> $GITHUB_OUTPUT
         id: ref
 
       - name: Validate Gradle Wrapper
