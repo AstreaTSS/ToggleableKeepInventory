@@ -1,6 +1,6 @@
 # ToggleableKeepInventory 
 
-A simple Minecraft plugin that allows for users to toggle their own keepInventory preferences. 
+A simple Minecraft plugin for Paper 1.18.2+ that allows for users to toggle their own keepInventory preferences. 
 
 More specifically, this plugin allows users to use `/keepinv` to decide if they want to keep their inventory on death or not.
 
