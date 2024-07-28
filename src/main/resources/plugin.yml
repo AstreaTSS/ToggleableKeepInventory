@@ -6,7 +6,7 @@ api-version: '1.18'
 permissions:
   togglekeepinv.command:
     description: "Allows the ability to run /keepinv."
-    default: false
+    default: true
 
 commands:
   keepinv:
