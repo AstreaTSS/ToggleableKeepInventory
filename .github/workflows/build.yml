@@ -7,13 +7,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Extract current branch name
+      - name: Checkout sources
+        uses: actions/checkout@v4
+
+      - name: Extract short commit hash
         shell: bash
         run: echo "git_hash=$(git rev-parse --short "$GITHUB_SHA")" >> $GITHUB_HASH
         id: ref
-        
-      - name: Checkout sources
-        uses: actions/checkout@v4
 
       - name: Validate Gradle Wrapper
         uses: gradle/actions/wrapper-validation@v3
