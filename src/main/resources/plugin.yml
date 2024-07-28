@@ -1,0 +1,16 @@
+name: ToggleableKeepInventory
+version: '1.0.0'
+main: cc.astrea.toggleableKeepInventory.ToggleableKeepInventory
+api-version: '1.18'
+
+permissions:
+  togglekeepinv.command:
+    description: "Allows the ability to run /keepinv."
+    default: false
+
+commands:
+  keepinv:
+    description: "Toggles keepInventory on or off for you."
+    usage: "/keepinv [on|off]"
+    permission: togglekeepinv.command
+    permission-message: "You do not have permission to use this command."
