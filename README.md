@@ -13,4 +13,4 @@ More specifically, this plugin allows users to use `/keepinv` to decide if they 
 
 ## Notes
 - This supports Bukkit/Spigot/Paper 1.18.2+. Support for other servers types is unlikely.
-- The one permission this mod provides is `togglekeepinv.command`.
+- The one permission this mod has is `togglekeepinv.command`.
